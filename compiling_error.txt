@@ -1,5 +1,0 @@
-D:\C-Programs\hello.c:2:2: warning: return type defaults to 'int' [-Wimplicit-int]
-  main() {
-  ^
-C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C:\Users\Aman\AppData\Local\Temp\hello.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
