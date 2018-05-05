@@ -1,9 +1,8 @@
 #include <stdio.h>
- main() {
-  int c;
-  char x;
-  while (x=getchar()!=EOF){
+ void main() {
+  int c=0;
+  while (getchar() !=EOF){
   ++c;
-printf("%d\n",c);
 }
+  printf("%d\n",c);
 }
