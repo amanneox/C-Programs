@@ -1,13 +1,24 @@
 #include <stdio.h>
 #include <conio.h>
-char *month_name(int n);
+#include <string.h>
+
+char *reverse();
+static char *name[]={"AMAN ADHIKARI","Anand Adhikari"};
 int main() {
-  int n;
-  scanf("%d\n",&n);
-  printf("%s\n",month_name(n));
+  reverse();
   return 0;
 }
-char *month_name(int n){
-  static char *name[]={"Not Defined","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"};
-  return (n<1 || n>12)? name[0]:name[n];
+char *reverse(){
+  int x;
+   int i=strlen(name)-1;
+  while (*name) {
+    printf("%s\n",name[i]);
+    x=strlen(name[i])-1;
+    while (x >-1) {
+      printf("%c",name[i][x]);
+      --x;
+    }
+    printf("\n");
+    --i;
+  }
 }
