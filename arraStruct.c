@@ -1,3 +1,4 @@
+// create a basic struct
 struct Point
 {
    int x, y;
